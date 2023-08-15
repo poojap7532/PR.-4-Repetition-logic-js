@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <!-- 2.Write a javascript program to Get the Fibonacci series up to n terms. -->
+    <script>
+
+        const number = parseInt(prompt('Enter the number of terms: '));
+        let firstNumber = 0;
+        let secondNumber = 1;
+        console.log(firstNumber);
+        for (i = 1; i <= number; i++) {
+
+            totalSum = firstNumber + secondNumber;
+
+            // console.log(secNum);
+
+            firstNumber = secondNumber;
+            secondNumber = totalSum;
+
+            console.log(totalSum);
+        }
+    </script>
+</body>
+
+</html>
